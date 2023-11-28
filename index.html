@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>MS Home</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -15,6 +15,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+html{scroll-behavior: smooth;}
 </style>
 <body class="w3-black">
 
@@ -30,7 +31,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-user w3-xxlarge"></i>
     <p>ABOUT</p>
   </a>
-  <a href="#portfolio" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="workexamples.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-folder-open w3-xxlarge"></i>
     <p>PORTFOLIO</p>
   </a>
@@ -65,9 +66,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <b>Currently looking for any internships or full-time career opportunities</b>
     </p> <br><br>
     
-    <h3 class="w3-text-light-grey">My Skills</h3>
+    <!--Skills-->
+    <h2 class="w3-text-light-grey">My Skills</h2>
     <hr style="width:200px" class="w3-opacity">
-<!--list for skills-->
         <ul>
           <li class="w3-padding-16">Java</li>
           <li class="w3-padding-16">HTML</li>
@@ -79,33 +80,26 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
           <li class="w3-padding-16">Canva</li>
           <li class="w3-padding-16">C++</li>
         </ul>
-      </div>
-    </div>    
-  </div>
+        <br>
+    
+    <!--Portfolio-->  
+    <div id="portfolio">
+      <h2 class="w3-text-light-grey">My Photos</h2>
+      <hr style="width:200px" class="w3-opacity">
   
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sailboat.jpg" style="width:100%">
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <img src="/w3images/wedding.jpg" style="width:100%">
+          <img src="/w3images/rocks.jpg" style="width:100%">
+          <img src="/w3images/sailboat.jpg" style="width:100%">
+        </div>
       </div>
-
-      <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/chef.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/p6.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
     </div>
-  <!-- End Portfolio Section -->
-  </div>
+
+  </div>    
+
+  
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="resume">
