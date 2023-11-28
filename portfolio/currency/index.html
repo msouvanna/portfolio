@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="JavaScript Calculator">
+    <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta name="author" content="Mya Souvanna">
+    <title>Currency Conversion</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/additional-methods.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+    <form id="myform">
+        <div class="formcontainer">
+            <h2>Stock Ticker Details</h2>
+            <label for="baseCurr" class="formlabel"><b>Base Currency:</b></label>
+            <select id="baseCurr" name="baseCurr"
+            data-rule-required="true" data-msg-required="Value is Required">
+                <option value="">Select a Currency</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro Dollar</option>
+                <option value="KRW">Korean Won</option>
+                <option value="AUD">Australian Dollar</option>  
+                <option value="THB">Thai Baht</option>
+            </select>
+            <label for="baseCurr" class="error" id="baseerror"></label>
+            <br>
+
+            <label for="toCurr" class="formlabel"><b>Convert To Currency:</b></label>
+            <select id="toCurr" name="toCurr"
+            data-rule-required="true" data-msg-required="Value is Required">
+                <option value="">Select a Currency</option>
+                <option value="USD">US Dollar</option>
+                <option value="EUR">Euro Dollar</option>
+                <option value="KRW">Korean Won</option>
+                <option value="AUD">Australian Dollar</option>
+                <option value="THB">Thai Baht</option>
+            </select>
+            <label for="toCurr" class="error" id="toerror"></label>
+            <br>
+
+            <label class="formlabel">From Date:</label>
+            <input type="date" name="FromDate" id="FromDate" 
+                data-rule-required="true" data-msg-required="From Date is Required">
+            <label id="FromDateError" for="FromDate" class="error"></label>
+            <br>
+
+            <label class="formlabel">To Date:</label>
+            <input type="date" name="ToDate" id="ToDate" 
+			     data-rule-required="true" data-msg-required="To Date is Required">
+		    <label id="ToDateError" for="ToDate" class="error"></label>
+            <br><br>
+
+            <input type="button" value="ShowResults" id="ShowResults" name="ShowResults" onclick="GetResults();">
+            <input type="button" value="Clear" id="Clear" name="Clear" onclick="ClearForm();">
+            <hr>
+        </div>
+    </form>
+<canvas id="myChart" style="width:100%;max-width:700px; background-color: cornsilk;"></canvas>
+
+<script src="assets/script/script.js"></script>
+</body>
+</html> 
